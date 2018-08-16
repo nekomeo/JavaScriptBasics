@@ -9,25 +9,29 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-    <h1>My First Web Page</h1>
-    <p>My first paragraph</p>
-
+    <p>Semicolons separate JavaScript statements</p>
     <p id="demo"></p>
     <script>
-        document.getElementById("demo").innerHTML = 5 + 6;
+        var a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("demo").innerHTML = c;
     </script>
     <script>
-        document.write(5 + 6);
+        document.getElementById("demo").innerHTML = 
+        "Hello Dolly!";
     </script>
-    <p>Below clears all existing HTML seen</p>
-    <button type="button" onclick="document.write(5 + 6)">Try it</button>
-    <p>Using window alert</p>
+    <p>JavaScript Code Blocks</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     <script>
-        window.alert(5 + 6);
+        function myFunction()
+        {
+            document.getElementById("demo1").innerHTML = "Hello Dolly!";
+            document.getElementById("demo2").innerHTML = "How are you?";
+        }
     </script>
-    <p>Using console.log()</p>
-    <script>
-        console.log(5 + 6);
-    </script>
+    <button type="button" onclick="myFunction()">Click Me!</button>
 </body>
 </html>
